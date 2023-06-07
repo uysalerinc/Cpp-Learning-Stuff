@@ -1,0 +1,7 @@
+#Outputs
+
+*.exe
+*.o
+
+# VsCode Configs
+.vscode/*
