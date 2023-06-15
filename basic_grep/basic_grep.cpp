@@ -1,14 +1,12 @@
 #include<iostream>
 #include<fstream>
 #include<string>
-#include<vector>
 
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    vector<string> contents {};
-    string lines {};
+    string line {};
     string word{};
     int wordNumber{0};
     int lineNumber(0);
@@ -21,10 +19,7 @@ int main(int argc, char const *argv[])
     if (!file) {
         cerr << "File didn't found";
     }
-    while(getline(file, lines)){
-        contents.push_back(lines);
-    }
-    for (string line : contents){
+    while(getline(file, line)){
         line.push_back('.');
         wordNumber =0;
         lineNumber ++;
